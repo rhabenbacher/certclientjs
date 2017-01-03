@@ -44,7 +44,7 @@ const httpsServerExpress = (privateKeyPem, certPem) => {
         key: privateKeyPem,
         cert: certPem
     };
-    return https.createServer(options, app).listen(8443, () => logger('Https Server listening on port 8443', 'green'));
+    return https.createServer(options, app).listen(config.server.httpsPort, () => logger(`Https Server listening on port ${config.server.httpsPort}`, 'green'));
 
 };
 
