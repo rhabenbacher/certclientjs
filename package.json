@@ -1,0 +1,21 @@
+{
+  "name": "letsencryptdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"export NODE_ENV=devConf && node server",
+    "test": "export NODE_ENV=stagingConf && node server",
+    "prod": "export NODE_ENV=prodConf && node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.7.14",
+    "certpem": "^1.0.1",
+    "express": "^4.14.0",
+    "pidusage": "^1.1.0",
+    "rsa-compat": "^1.2.7",
+    "tachyons": "^4.6.1"
+  }
+}

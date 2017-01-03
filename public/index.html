@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>https server managing certificates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/tachyons.min.css" />
+    <style>
+        .flex-75 {
+            flex-basis: 75%;
+        }
+
+        .flex-25 {
+            flex-basis: 25%;
+        }
+
+        @media screen and (min-width: 30em) {
+        .flex-100-ns {
+            flex-basis: 100%;
+        }
+      }
+        .justify-space-around {
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="vh-100 bg-navy white flex flex-column">
+        <article class="flex-75 flex flex-column justify-center">
+            <h1 class="f1 f-subheadline-m f-headline-l lh-solid fw5 mb2-ns mv3 tc">http<b>s</b> Node.js Server</h1>
+            <h2 class="f3 f2-m f1-l fw1 mt2-ns athelas mv5 mh3 tc ">with no need to manage certificates</h2>
+        </article>
+        <footer class="flex-25 bg-light-silver flex flex-column justify-center">
+            <blockquote class="">
+                <p class="f4 f3-ns fw1 black-80 athelas tc">
+                    powered by <a href='http://www.letsencrypt.org' class="link underline-hover dark-pink">letsencrypt.org</a>
+                </p>
+            </blockquote>
+        </footer>
+    </section>
+    <div class="vh-100 flex flex-column">
+        <article class="flex-75 bg-dark-pink flex flex-column flex-row-ns flex-wrap justify-space-around items-center white">
+            <div class="tc flex-100-ns pa2">
+                <p class="f6 f5-ns b ml0 pa1 ma0">Certificate issuer</p>
+                <p class="f3 f2-ns b ml0 pa0 ma0">{{issuer}}</p>
+            </div>
+            <div class="tc pa3-ns">
+                <p class="f6 f5-ns b ml0 pa1 ma0">Certificate valid from</p>
+                <p class="f3 f2-ns b ml0 pa0 ma0">{{certValidFrom}}</p>
+            </div>
+            <div class="tc pa3-ns">
+                <p class="f6 f5-ns b ml0 pa1 ma0">Certificate valid to</p>
+                <p class="f3 f2-ns b ml0 pa0 ma0">{{certValidTo}}</p>
+            </div>
+        </article>
+        <footer class="flex-25 bg-white dark-pink flex justify-center items-center">
+            <p class="f4 f3-ns tc athelas">developed by rudolf habenbacher</p>
+        </footer>
+    </div>
+</body>
+<!--  -->
+
+</html>
