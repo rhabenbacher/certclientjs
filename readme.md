@@ -2,7 +2,7 @@
 
 It was built with *node.js 6.9.2* and *Express 4* in December 2016. For development I used the [Boulder](https://github.com/letsencrypt/boulder) Server.
 
-![Image of Start Screen](https://github.com/rhabenbacher/letsencryptclient/images/startScreen.png)
+![Image of Start Screen](https://cloud.githubusercontent.com/assets/14052089/21606582/cfa0e95e-d1b0-11e6-8763-63f7697eb54d.png)
 
 
 ## About
