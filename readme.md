@@ -2,7 +2,7 @@
 
 It was built with *node.js 6.9.2* and *Express 4* in December 2016. For development I used the [Boulder](https://github.com/letsencrypt/boulder) Server.
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Start Screen](https://github.com/rhabenbacher/letsencryptclient/images/startScreen.png)
 
 
 ## About
