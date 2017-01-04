@@ -134,6 +134,7 @@ setInterval(pustat,10000);
 
 
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
+app.use('/img', express.static(path.join(__dirname, 'public/img')));
 // app.get('/',(req,res) => {
 //   res.end('<html><h1>Hello World from Express https Server</h1></html>');
 //
