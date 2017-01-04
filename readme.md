@@ -1,16 +1,21 @@
+![Image of Start Screen](https://cloud.githubusercontent.com/assets/14052089/21648390/1aa2608e-d29e-11e6-9d5b-abc6dfc094d9.png)
+
+
+
 # A Let's Encrypt Client built with node.js
 
 It was built with *node.js 6.9.2* and *Express 4* in December 2016. For development I used the [Boulder](https://github.com/letsencrypt/boulder) Server.
 
-![Image of Start Screen](https://cloud.githubusercontent.com/assets/14052089/21606582/cfa0e95e-d1b0-11e6-8763-63f7697eb54d.png)
-![Image Screen2](https://cloud.githubusercontent.com/assets/14052089/21616107/8a661168-d1e0-11e6-9c02-be8d174495c2.png)
-
 
 ## About
 
-This (createCertificate.js) is a node.js client for Let's Encrypt to automatize the management of https certificates. It comes with a tiny express.js server (server.js) for demonstration purposes.
+This is a node.js client for Let's Encrypt to automatize the management of https certificates. It comes with a tiny express.js server (server.js) for demonstration purposes.
 
-It was built with the following design goals in mind:
+The demo server is providing some basic information about the certificate:
+
+![Image Screen2](https://cloud.githubusercontent.com/assets/14052089/21648336/e90b3bf4-d29d-11e6-8b7e-04594f493664.png)
+
+The project was implemented with the following design goals in mind:
 
 * Use ES6 Promises and other ES6 features like const, let, etc...
 * Store the certificate either on the filesystem or in an AWS S3 bucket
