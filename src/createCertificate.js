@@ -9,12 +9,15 @@ const config = require("./../" + (process.env.NODE_ENV || "devConf"));
 
 let state = {};
 
+const getUserAgent = () => `certclientjs/1.0 nodejs/${process.version}`;
+
 const requestPGet = (url => requestP({
     hostname: require('url').parse(url).hostname,
     port: require('url').parse(url).port,
     protocol: require('url').parse(url).protocol,
     path: require('url').parse(url).path,
-    method: 'GET'
+    method: 'GET',
+    headers: {'User-Agent':getUserAgent()}
 }, undefined, config.logger));
 
 const requestPPost = ((url, body) =>
@@ -26,7 +29,8 @@ const requestPPost = ((url, body) =>
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'Content-Length': Buffer.byteLength(body)
+                'Content-Length': Buffer.byteLength(body),
+                'User-Agent':getUserAgent()
             }
         },
         body, config.logger));
@@ -88,7 +92,7 @@ const newArray = (element) => {
 };
 
 const newReg = (data) => {
-    
+
     const reg_body = JWS.sign({
         "resource": "new-reg",
         "contact": newArray(config.certFor.contact)

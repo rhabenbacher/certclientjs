@@ -130,7 +130,7 @@ const pustat = () => pusage.stat(process.pid, function(err, stat) {
     logger(`CPU: ${("  "+Math.round(stat.cpu)).slice(-3)} %  Mem:${("   "+Math.round(stat.memory / 1024 / 1024)).slice(-4)} MB`,'cyan');
 });
 
-setInterval(pustat,10000);
+// setInterval(pustat,10000);
 
 
 app.use('/css', express.static(path.join(__dirname, 'public/css')));
