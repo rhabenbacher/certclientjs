@@ -1,4 +1,4 @@
-![Image of Start Screen](https://cloud.githubusercontent.com/assets/14052089/21648390/1aa2608e-d29e-11e6-9d5b-abc6dfc094d9.png)
+
 
 
 
