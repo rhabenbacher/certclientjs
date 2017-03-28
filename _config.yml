@@ -3,4 +3,10 @@ gems:
   - jekyll-seo-tag
 title: "node.js client for let's encrypt"
 description: "automated certificate management implemented with node.js & express"
+social:
+  name: Rudolf Habenbacher
+  links:
+    - https://at.linkedin.com/in/rudolfhabenbacher
+    - https://www.xing.com/profile/Rudolf_Habenbacher
+  
  
