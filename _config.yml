@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
 gems:
   - jekyll-seo-tag
- title: node.js client for let's encrypt
- description: automated certificate management implemented with node.js & express
+ title: "node.js client for let's encrypt"
+ description: "automated certificate management implemented with node.js & express"
  
